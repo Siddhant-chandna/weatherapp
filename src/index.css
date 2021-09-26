@@ -11,61 +11,61 @@ body{
   background-image: url("./asserts/cold-weather.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.warm{
   background-image: url("./asserts/warm-weather.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.mist{
   background-image: url("./asserts/mist.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.haze{
   background-image: url("./asserts/haze.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.brokenclouds{
   background-image: url("./asserts/broken-clouds.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.fewclouds{
   background-image: url("./asserts/few-clouds.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.lightrain{
   background-image: url("./asserts/light-rain.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.overcastclouds{
   background-image: url("./asserts/overcast-clouds.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.thunderstrom{
   background-image: url("./asserts/thunderstrom.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 .app.scatteredclouds{
   background-image: url("./asserts/scattered-clouds.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.8 ease-out;
+  transition: 0.2 ease-out;
 }
 
 main{
