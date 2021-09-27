@@ -54,6 +54,7 @@ function App() {
          <div className="location">{weather.name},{weather.sys.country}</div>
          <div className="date">{dateBuilder(new Date())}</div>
          <div className="date">Latitude : {weather.coord.lat}  Longitude : {weather.coord.lon} </div>
+         <div className="date">{weather.main.sea_level} above Sea Level </div>
        </div>
        <div className="weather-box">
          <div className="temp">{Math.round(weather.main.temp)}°C</div>

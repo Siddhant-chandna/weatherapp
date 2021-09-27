@@ -116,6 +116,7 @@ main{
 }
 .location-box .date{
   color: #800b0b;
+  margin-top: 2px;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
