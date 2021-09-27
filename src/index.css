@@ -74,9 +74,13 @@ main{
   padding: 40px;
 }
 
-.search-box{
+.search-box {
   width: 100%;
   margin: 0 0 75px;
+}
+.searching{
+  margin-top: -114px;
+  margin-left: 15px;
 }
 
 .search-box .search-bar{
@@ -138,7 +142,12 @@ main{
  text-align: center;
  box-shadow: 3px 6px rgba(0,0,0,0.2);
 }
-
+.feelslike{
+  color: #800b08;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
 .weather-box .weather{
   color: #800b08;
   font-size: 48px;

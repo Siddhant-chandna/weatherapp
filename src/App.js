@@ -39,23 +39,25 @@ function App() {
     <div className={(typeof weather.main !== "undefined") ? (weather.weather[0].description==="mist")? 'app mist':(weather.weather[0].description==='haze')?'app haze':(weather.weather[0].description==='scattered clouds')?'app scatteredclouds':(weather.weather[0].description==='broken clouds')?'app brokenclouds':(weather.weather[0].description==='few clouds')? 'app fewclouds':(weather.weather[0].description==='thunderstorm')? 'app thunderstrom':(weather.weather[0].description==='light rain')? 'app lightrain':(weather.weather[0].description==='overcast clouds')? 'app overcastclouds':'app warm': 'app cold'
     }>
      <main>
-       <div className="search-box">
-         <input type="text"
-           className="search-bar"
-           placeholder="Search..."
-           onChange={e=>setQuery(e.target.value)}
-           value={query}
-           onKeyPress={search}
-         />
-       </div>
-       {(typeof weather.main != "undefined") ? (
+     <div className="search-box">
+       <input type="text"
+         className="search-bar"
+         placeholder="Weather at your City..."
+         onChange={e=>setQuery(e.target.value)}
+         value={query}
+         onKeyPress={search}
+       />
+     </div>
+       {(typeof weather.main !== "undefined") ? (
        <div>
          <div className="location-box">
          <div className="location">{weather.name},{weather.sys.country}</div>
          <div className="date">{dateBuilder(new Date())}</div>
+         <div className="date">Latitude : {weather.coord.lat}  Longitude : {weather.coord.lon} </div>
        </div>
        <div className="weather-box">
          <div className="temp">{Math.round(weather.main.temp)}°C</div>
+         <div className="feelslike">Feels Like : {Math.round(weather.main.feels_like)}°C</div>
          <div className="weather">{weather.weather[0].description}</div>
        </div>
        </div>
