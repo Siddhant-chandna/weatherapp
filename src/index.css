@@ -19,6 +19,12 @@ body{
   background-position: bottom;
   transition: 0.2 ease-out;
 }
+.app.moderaterain{
+  background-image: url("./asserts/moderate-rain.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.2 ease-out;
+}
 .app.mist{
   background-image: url("./asserts/mist.jpg");
   background-size: cover;

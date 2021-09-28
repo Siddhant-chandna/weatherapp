@@ -4,11 +4,12 @@ import React,{useState} from 'react';
 const api={
   key:"b073d84a2ec2e05edbf1c9e80ec04a77",
   base:"https://api.openweathermap.org/data/2.5/"
+
 }
 
 function App() {
 
-  const [query, setQuery] = useState(' ');
+  const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
   const search=evt=>{
@@ -36,7 +37,7 @@ function App() {
   // <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app cold') : 'app cold'
 
   return (
-    <div className={(typeof weather.main !== "undefined") ? (weather.weather[0].description==="mist")? 'app mist':(weather.weather[0].description==='haze')?'app haze':(weather.weather[0].description==='scattered clouds')?'app scatteredclouds':(weather.weather[0].description==='broken clouds')?'app brokenclouds':(weather.weather[0].description==='few clouds')? 'app fewclouds':(weather.weather[0].description==='thunderstorm')? 'app thunderstrom':(weather.weather[0].description==='light rain')? 'app lightrain':(weather.weather[0].description==='overcast clouds')? 'app overcastclouds':'app warm': 'app cold'
+    <div className={(typeof weather.main !== "undefined") ? (weather.weather[0].description==="mist")? 'app mist':(weather.weather[0].description==='haze')?'app haze':(weather.weather[0].description==='scattered clouds')?'app scatteredclouds':(weather.weather[0].description==='broken clouds')?'app brokenclouds':(weather.weather[0].description==='few clouds')? 'app fewclouds':(weather.weather[0].description==='thunderstorm')? 'app thunderstrom':(weather.weather[0].description==='light rain')? 'app lightrain':(weather.weather[0].description==='overcast clouds')? 'app overcastclouds':(weather.weather[0].description==='moderate rain')? 'app moderaterain':'app warm': 'app cold'
     }>
      <main>
      <div className="search-box">
